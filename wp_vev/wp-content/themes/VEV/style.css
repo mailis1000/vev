@@ -1,0 +1,153 @@
+/*
+Theme Name: VEV
+Author: Mailis Kokla
+Description: WordPress Theme for Virtuaalettevõte OÜ
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+section {
+    position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.hidden {
+    display: none;
+}
+
+/***************************************
+LOGO & NAVIGATION
+***************************************/
+
+.logo img {
+    position: absolute;
+    width: 350px;
+    top: 30px;
+    left: 10%;
+    color: #ffffff;
+}
+
+#navigation {
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 280px;
+    left: 10%;
+    color: #fff;
+    border-right: 5px solid #1c75bc;
+}
+
+#navigation ul {
+    margin: 20px auto;
+    font-size: 75px;
+    position: absolute;
+    right: 50px;
+}
+#navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#navigation ul li span {
+    float: right;
+}
+#navigation ul li a:hover {
+    cursor: pointer;
+    color: #1c75bc;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+/***************************************
+FRONT PAGE BACKGROUND
+***************************************/
+
+.overlay {
+    background: url(img/overlay.jpg);
+    height: 100vh;
+    opacity: 0.8;
+}
+.overlay::before {
+    background: black;
+    height: 100vh;
+    opacity: 0.8;
+}
+.overlay2 {
+    background: black;
+    height: 100vh;
+    opacity: 0.9;
+}
+.background {
+    background: url(img/header.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.main-content {
+    width: 710px;
+    min-height: 500px;
+    opacity: 0.9;
+    color: white;
+    border-top: 2px solid white;
+    position: absolute;
+    top: 280px;
+    right: 0;
+}
+
+.description {
+    position: absolute;
+    top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.active {
+    display: block;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/***************************************
+FOOTER
+***************************************/
+
+footer {
+    border-top: 2px solid lightgray;
+    position: absolute;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+}
+footer ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer ul li {
+    color: #fff;
+}
