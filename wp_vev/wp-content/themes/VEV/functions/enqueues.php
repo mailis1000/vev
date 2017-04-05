@@ -3,8 +3,6 @@ function vev_enqueues() {
 
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Abel', false );
 
-    wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . '../theme/sass/font-awesome.min.css');
-
     $themecsspath = get_stylesheet_directory() . '/theme/sass/theme.css';
     wp_enqueue_style(
         'vev',
